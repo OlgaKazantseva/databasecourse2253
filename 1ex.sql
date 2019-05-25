@@ -16,7 +16,7 @@ INSERT INTO `theatre`.`Perfomances` (`idPerfomance`, `Name`, `Author`, `Year`, `
 INSERT INTO `theatre`.`Perfomances` (`Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('Нолог', 'Пыня', '1999', 'Жесткое порево', '99', 'Развод на деньги');
 
 --1.3
-INSERT INTO `theatre`.`Items` (`Name`, `Description`) VALUES ('Фаллоимитатор', 'Розовый');
+INSERT INTO `theatre`.`Items` (`Name`, `Description`) VALUES ('Веревка', 'Розовый');
 INSERT INTO `theatre`.`Items` (`Name`, `Description`) VALUES ('Кляп', 'Кожаный');
 INSERT INTO `theatre`.`Items` (`Name`, `Description`) VALUES ('Вишня', 'Садовая');
 INSERT INTO `theatre`.`Items` (`Name`, `Description`) VALUES ('Кресло', 'Дубовое');
@@ -28,3 +28,20 @@ INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`,
 INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`, `Cost`) VALUES ('3', '1910151130', '1910152100', '0', '4', '20');
 INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`) VALUES ('4', '1910161630', '1910161800', '1', '3');
 INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`, `Cost`) VALUES ('5', '1910171830', '1910172000', '0', '3', '1000');
+
+--1.5
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('4', '1', 'Директор');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('4', '2', 'Актер');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('4', '3', 'Актер');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('4', '6', 'Актер');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('4', '5', 'Свет');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('1', '2', 'Биба');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('1', '3', 'Даша');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('1', '7', 'Александр');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('2', '2', 'Актер');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('2', '7', 'Актер');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('2', '5', 'Свет');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('2', '1', 'Директор');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('3', '1', 'Доминант');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('3', '7', 'Пассив');
+INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('3', '5', 'Оператор');

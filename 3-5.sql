@@ -23,7 +23,7 @@ where idP_I =1
 --4
 use theatre;
 UPDATE Items
-set Name="Горшок"
+set Name="Горшок",Decscription="Мертв"
 where idItem =1
 ;
 UPDATE Perfomances

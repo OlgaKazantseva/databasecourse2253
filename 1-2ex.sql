@@ -45,3 +45,10 @@ INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VA
 INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('3', '1', 'Доминант');
 INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('3', '7', 'Пассив');
 INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('3', '5', 'Оператор');
+--1.6
+INSERT INTO `theatre`.`P_I` (`Perfomances_idPerfomance`, `Items_idItem`) VALUES ('1', '1');
+INSERT INTO `theatre`.`P_I` (`Perfomances_idPerfomance`, `Items_idItem`) VALUES ('1', '2');
+INSERT INTO `theatre`.`P_I` (`Perfomances_idPerfomance`, `Items_idItem`) VALUES ('2', '3');
+INSERT INTO `theatre`.`P_I` (`Perfomances_idPerfomance`, `Items_idItem`) VALUES ('2', '4');
+INSERT INTO `theatre`.`P_I` (`Perfomances_idPerfomance`, `Items_idItem`) VALUES ('3', '2');
+INSERT INTO `theatre`.`P_I` (`Perfomances_idPerfomance`, `Items_idItem`) VALUES ('3', '4');

@@ -1,7 +1,7 @@
 --13.1
 /*удалить расписание на  прошлый месяц*/
 delete from Schedules
-where (s.Start < dateadd(month, datediff(month, -1, now()) - 1, -1)) and s.`isRepetision`=0;
+where (Start < dateadd(month, datediff(month, -1, now()) - 1, -1)) and `isRepetision`=0;
 --13.2
 /*удалить самые дешевые выступления*/
 DELETE FROM Schedules

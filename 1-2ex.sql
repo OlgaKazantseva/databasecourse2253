@@ -7,13 +7,13 @@ INSERT INTO `theatre`.`Staff` (`idStaff`, `Surname`, `Name`, `Middlename`, `Pass
 INSERT INTO `theatre`.`Staff` (`idStaff`, `Surname`, `Name`, `Middlename`, `Passport`, `Position`, `Adress`, `Home_phone`, `Mobile_phone`) VALUES ('5', 'Бобиков', 'Станислав', 'Сергеевич', '0642313', 'Свет', 'блблбл', '09182338', '89346216567');
 INSERT INTO `theatre`.`Staff` (`idStaff`, `Surname`, `Name`, `Middlename`, `Passport`, `Position`, `Adress`, `Home_phone`, `Mobile_phone`) VALUES ('6', 'Гвоздарева', 'Ирина', 'Андреевна', '8977647', 'Актер', 'бобобо', '78685689', '89564563563');
 INSERT INTO `theatre`.`Staff` (`idStaff`, `Surname`, `Name`, `Middlename`, `Passport`, `Position`, `Adress`, `Home_phone`, `Mobile_phone`) VALUES ('7', 'Петров', 'Александр', 'Угович', '8757568', 'Актер', 'бебебе', '98674545', '89456452711');
-INSERT INTO `theatre`.`Staff` (`idStaff`, `Surname`, `Name`, `Middlename`, `Passport`, `Position`, `Adress`, `Home_phone`, `Mobile_phone`) VALUES ('8', 'Аджи-Асан', 'Аким', 'Диляверович', '8665765', 'Постановщик', 'брбрбр', '56464756', '89554354567');
+INSERT INTO `theatre`.`Staff` ( `Surname`, `Name`, `Middlename`, `Passport`, `Position`, `Adress`, `Home_phone`, `Mobile_phone`) VALUES ( 'Аджи-Асан', 'Аким', 'Диляверович', '8665765', 'Постановщик', 'брбрбр', '56464756', '89554354567');
 
 --1.2
-INSERT INTO `theatre`.`Perfomances` (`idPerfomance`, `Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('1', 'Стриптиз-шоу', 'Директор', '2019', 'Стриптиз', '2', 'фырфырфыр');
+INSERT INTO `theatre`.`Perfomances` (`idPerfomance`, `Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('1', 'Игра Престолов', 'Директор', '2019', 'Фэнтези', '2', 'фырфырфыр');
 INSERT INTO `theatre`.`Perfomances` (`idPerfomance`, `Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('2', 'Вишневый сад', 'Чехов', '1899', 'Драма', '3', 'пипипи');
 INSERT INTO `theatre`.`Perfomances` (`idPerfomance`, `Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('3', 'Пожирание собаки', 'Директор', '2017', 'Драма', '1', 'гавгавгав');
-INSERT INTO `theatre`.`Perfomances` (`Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('Нолог', 'Пыня', '1999', 'Жесткое порево', '99', 'Развод на деньги');
+INSERT INTO `theatre`.`Perfomances` (`Name`, `Author`, `Year`, `Genre`, `Num_acts`, `Description`) VALUES ('Горе от ума', 'Грибоедов', '1869', 'Комедия', '4', 'мямямя');
 
 --1.3
 INSERT INTO `theatre`.`Items` (`Name`, `Description`) VALUES ('Веревка', 'Розовый');
@@ -27,7 +27,7 @@ INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`,
 INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`, `Cost`) VALUES ('2', '1910141800', '1910142030', '0', '1', '500');
 INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`, `Cost`) VALUES ('3', '1910151130', '1910152100', '0', '4', '20');
 INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`) VALUES ('4', '1910161630', '1910161800', '1', '3');
-INSERT INTO `theatre`.`Schedules` (`idSchedule`, `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`, `Cost`) VALUES ('5', '1910171830', '1910172000', '0', '3', '1000');
+INSERT INTO `theatre`.`Schedules` ( `Start`, `End`, `isRepetision`, `Perfomances_idPerfomance`, `Cost`) VALUES ( '1910171830', '1910172000', '0', '3', '1000');
 
 --1.5
 INSERT INTO `theatre`.`S_S` (`Schedules_idSchedule`, `Staff_idStaff`, `role`) VALUES ('4', '1', 'Директор');

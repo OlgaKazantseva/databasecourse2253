@@ -52,3 +52,17 @@ Where (ss.Staff_idStaff=1)
 order by sch.Start
 limit 3;
 ;
+--11.5
+ /*Вывести количество актеров для всех представлений и их репетиций*/
+use theatre;
+select p.Name,sch.Start, count(*)
+from Perfomances as p
+right join Schedules as sch
+on p. `idPerfomance`=sch.`Perfomances_idPerfomance`
+right join S_S as ss
+on ss.`Schedules_idSchedule`=sch.idSchedule
+left join Staff as st
+on ss.Staff_idStaff=st.idStaff
+where st.Position like "%актер%"
+group by p.Name,sch.Start
+;

@@ -16,3 +16,12 @@ on sc.`Perfomances_idPerfomance`=p.`idPerfomance`
 order by sc.Cost desc
 limit 1) as t1));
                       --12.3
+                      /*поменять должность человека, который нигде не участвовал*/
+UPDATE Staff
+set `Position` = 'разнорабочий'
+where(Name in (select t1.Name from(select s.Name,count(ss.idS_S)
+from Staff as s
+left join S_S as ss
+on s.idStaff=ss.Staff_idStaff
+group by s.Name) as t1))
+;
